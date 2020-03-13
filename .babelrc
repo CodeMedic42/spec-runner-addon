@@ -1,0 +1,27 @@
+{
+  "presets": [
+    "@babel/env",
+    "@babel/react"
+  ],
+  "plugins": [
+    [
+      "transform-rename-import",
+      {
+        "replacements": [
+          {
+            "original": "./styles.scss",
+            "replacement": "./styles.css"
+          },
+          {
+            "original": "./print.css",
+            "replacement": "./print.raw"
+          }
+        ]
+      }
+    ],
+    "babel-plugin-inline-import"
+  ],
+  "ignore": [
+    "**/*.test.js"
+  ]
+}

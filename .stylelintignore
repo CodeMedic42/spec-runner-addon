@@ -1,0 +1,9 @@
+build/* 
+dist/*
+lib/*
+node_modules/*
+*.json
+*.png
+*.gif
+*.cur
+*.svg

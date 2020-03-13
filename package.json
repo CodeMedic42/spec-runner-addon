@@ -1,0 +1,59 @@
+{
+  "name": "spec-runner-addon",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "bin": {
+    "spec-runner": "./cli.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "lint:js": "eslint --ext js,jsx ./src",
+    "lint:styles": "stylelint ./src",
+    "lint": "npm run lint:js && npm run lint:styles",
+    "clean": "rimraf dist",
+    "build:styles": "node-sass ./src --output ./dist",
+    "build:js": "./node_modules/.bin/babel ./src --out-dir dist",
+    "build": "npm run clean && npm run build:js && npm run build:styles",
+    "ot": "mocha --require @bable/register"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@storybook/addons": "5.3.14",
+    "@storybook/api": "5.3.14",
+    "@storybook/components": "5.3.14",
+    "@storybook/core-events": "5.3.14",
+    "classnames": "2.2.6",
+    "commander": "4.1.1",
+    "glob": "7.1.6",
+    "lodash": "4.17.15",
+    "mocha": "7.1.0",
+    "prop-types": "15.7.2",
+    "upper-case-first": "2.0.1"
+  },
+  "peerDependencies": {
+    "react": "16.13.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.4.4",
+    "@babel/core": "7.2.2",
+    "@babel/node": "7.8.7",
+    "@babel/preset-env": "7.8.4",
+    "@babel/preset-react": "7.8.3",
+    "babel-plugin-inline-import": "3.0.0",
+    "babel-plugin-transform-rename-import": "2.3.0",
+    "eslint": "5.12.1",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-config-prettier": "4.2.0",
+    "eslint-loader": "2.1.1",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jest": "23.7.0",
+    "eslint-plugin-jsx-a11y": "6.1.2",
+    "eslint-plugin-react": "7.12.4",
+    "node-sass": "4.11.0",
+    "react": "16.13.0"
+  }
+}

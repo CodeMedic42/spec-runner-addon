@@ -1,0 +1,76 @@
+.css-1psuyp > *:first-child {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.spec-runner-view {
+  padding: 10px;
+}
+
+/* .spec-runner-suite {
+} */
+
+.spec-runner-suite-header {
+  margin-bottom: 5px;
+}
+
+.spec-runner-suite-title {
+  font-weight: 700;
+}
+
+.spec-runner-suite-state {
+  margin-left: 5px;
+}
+
+.spec-runner-suite-state.pending {
+  color: #007bff;
+}
+
+.spec-runner-suite-state.running {
+  color: #ffc107;
+}
+
+.spec-runner-suite-state.passed {
+  color: #28a745;
+}
+
+.spec-runner-suite-state.failed {
+  color: #dc3545;
+}
+
+.spec-runner-suite-contents {
+  margin-left: 10px;
+}
+
+.spec-runner-test {
+  margin-bottom: 5px;
+}
+
+.spec-runner-test-title {
+  font-weight: 700;
+}
+
+.spec-runner-test-state {
+  margin-left: 5px;
+}
+
+.spec-runner-test-state.pending {
+  color: #007bff;
+}
+
+.spec-runner-test-state.running {
+  color: #ffc107;
+}
+
+.spec-runner-test-state.passed {
+  color: #28a745;
+}
+
+.spec-runner-test-state.failed {
+  color: #dc3545;
+}
+
+.spec-runner-test-title-error {
+  margin-left: 10px;
+}
